@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.loader{
+    border: 0 soild transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.loader::before,
+.loader::after{
+    content: "";
+    position: absolute;
+    border: 7px solid green;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+}
+
+.loader::before{
+    animation-delay: 1s;
+}
+
+@keyframes loader{
+    0%{
+        transform
+    }
+}
